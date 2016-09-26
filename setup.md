@@ -1,4 +1,21 @@
-* sudo apt-get update
-* sudo apt-get install python3-pandas ipython3-notebook
-* sudo pip install dask[array]
-* sudo pip install dask[dataframe]
+* install miniconda for ARM (reply YES to the `PATH` modifications in `.bashrc`):
+
+        wget http://repo.continuum.io/miniconda/Miniconda3-3.16.0-Linux-armv7l.sh
+        bash Miniconda3-3.16.0-Linux-armv7l.sh 
+
+* restart the terminal
+* install conda packages
+
+        conda install h5py pandas numpy tornado ipython jinja2 traitlets pyzmq
+
+* create a conda environment named `py`
+
+        conda create -n py --clone root
+
+* activate the environment
+
+        source activate py
+
+* install pip packages
+
+        pip install dask[array] jupyter
