@@ -6,7 +6,7 @@
 * restart the terminal
 * install conda packages
 
-        conda install h5py pandas numpy tornado ipython jinja2 traitlets pyzmq
+        conda install h5py pandas numpy tornado ipython jinja2 traitlets pyzmq scikit-learn
 
 * create a conda environment named `py`
 
